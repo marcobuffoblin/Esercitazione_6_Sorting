@@ -48,11 +48,12 @@ int main(int argc, char *argv[]){
 //**********************************************************************************************************************
     //Considero lo stesso vettore di elementi ordinati
     timeElapsed_sum=0;
-    SortLibrary::MergeSort(vect_1);;
+    SortLibrary::MergeSort(vect_1);
     cout<<"Il vettore di partenza e'(ordinato) : ";
     for(unsigned int i=0;i<dim_vect;i++)
         cout<<vect_1[i]<<" ";
     cout<<endl;
+    vect_1_copia=vect_1;
     for(int i=0;i<contatore;i++)
     {
         chrono::steady_clock::time_point t_begin = chrono::steady_clock::now();
