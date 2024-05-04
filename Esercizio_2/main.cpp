@@ -7,7 +7,9 @@
 #include<SortingAlgorithm.hpp>
 using namespace std;
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]){//argc mi indica il numero di elementi della command line
+                                 //argv è il vettore di questi elementi
+                                 // argv[0] è il nome del programma che è stato lanciato
     for (int i=1; i<argc;i++){
         unsigned int dim_vect=stoi(argv[i]); // converto in intero il numero preso dalla command line
         int contatore=100;
@@ -79,6 +81,6 @@ int main(int argc, char *argv[]){
     cout<<"IN CONCLUSIONE:"<<endl<<"Coerentemente con quanto visto a lezione si osserva che l'algoritmo Bubble Sort "
             "avendo costo computazionale n*n e' adatto per vettori di piccole dimensioni,viceversa "
             "l'algoritmo Merge Sort avendo costo computazionale n*log(n) e' adatto per vettori aventi dimensioni piu' "
-            "elevate. Se il vettore e'a di suo gia' ordinato il Bubble Sort impiega meno tempo "<<endl;
+            "elevate. Se il vettore e' di suo gia' ordinato il Bubble Sort impiega meno tempo "<<endl;
     return 0;
 }
